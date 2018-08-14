@@ -160,7 +160,7 @@ func (online *Online) TransCmdWithJump(w http.ResponseWriter, r *http.Request) {
 			return
 		} else {
 			clog.Info("%s SSHCommand req: %v, resp: %v", fun, command, output)
-			result[targetHost] = strings.SplitAfter(output, "\n")
+			result[targetHost] = strings.Split(output, "\n")
 		}
 	}
 
