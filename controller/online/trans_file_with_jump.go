@@ -13,7 +13,7 @@ import (
 
 	"lib"
 
-	"github.com/simplejia/clog"
+	"github.com/simplejia/clog/api"
 	"golang.org/x/crypto/ssh"
 )
 

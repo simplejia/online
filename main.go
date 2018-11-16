@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/simplejia/clog"
+	"github.com/simplejia/clog/api"
 	"github.com/simplejia/namecli/api"
 	"github.com/simplejia/online/conf"
 	"github.com/simplejia/utils"
