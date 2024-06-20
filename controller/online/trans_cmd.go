@@ -10,7 +10,7 @@ import (
 
 	"lib"
 
-	"github.com/simplejia/clog/api"
+	clog "github.com/simplejia/clog/api"
 	"golang.org/x/crypto/ssh"
 )
 
@@ -55,6 +55,7 @@ type TransCmdRsp struct {
 }
 
 // TransCmd just for demo
+// @prefilter("Auth")
 // @postfilter("Boss")
 func (online *Online) TransCmd(w http.ResponseWriter, r *http.Request) {
 	fun := "online.Online.TransCmd"

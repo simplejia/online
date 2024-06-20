@@ -18,8 +18,9 @@ import (
 type Conf struct {
 	// 基本配置
 	App *struct {
-		Name string
-		Port int
+		Name   string
+		Port   int
+		Secret string
 	}
 	// clog日志输出配置
 	Clog *struct {

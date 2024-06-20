@@ -2,7 +2,8 @@
     "prod": { // 运行环境，启动时通过-env参数指定，如：$prog -env prod
         "app": {
             "name": "online",
-            "port": 8334 // 服务监听端口
+            "port": 8334, // 服务监听端口
+            "secret": ""
         },
         "clog": {
             "name":"online",

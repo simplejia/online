@@ -13,7 +13,7 @@ import (
 
 	"lib"
 
-	"github.com/simplejia/clog/api"
+	clog "github.com/simplejia/clog/api"
 	"golang.org/x/crypto/ssh"
 )
 
@@ -76,6 +76,7 @@ type TransFileRsp struct {
 }
 
 // TransFile just for demo
+// @prefilter("Auth")
 func (online *Online) TransFile(w http.ResponseWriter, r *http.Request) {
 	fun := "online.Online.TransFile"
 
